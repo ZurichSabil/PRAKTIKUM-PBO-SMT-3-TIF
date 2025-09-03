@@ -2,8 +2,8 @@ package praktikum3;
 
 public class main2 {
     public static void main(String[] args) {
-        Mobil mobil1 = new Mobil("Toyota", "BmW", 2020, "hitam");
-        Mobil mobil2 = new Mobil("Honda", "Civic", 2021, "putih");
+        Mobil mobil1 = new Mobil("Mersedes", "Suzuki", 2020, "hitam");
+        Mobil mobil2 = new Mobil("Honda", "Wuling", 2021, "putih");
 
         mobil1.displayInfo();
         mobil1.startEngine();
