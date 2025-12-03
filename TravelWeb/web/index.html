@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f3f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 420px;
+            margin: 60px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #00000020;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #2c3e50;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 1px solid #bbb;
+            font-size: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Form Pemesanan Travel</h2>
+
+        <form action="pilih-paket" method="POST">
+
+            <label>Nama</label>
+            <input type="text" name="nama" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>No HP</label>
+            <input type="text" name="hp" required>
+
+            <label>Pilih Jenis Paket</label>
+            <select name="jenisPaket">
+                <option value="domestik">Domestik</option>
+                <option value="internasional">Internasional</option>
+            </select>
+
+            <button type="submit">Lanjut</button>
+        </form>
+    </div>
+
+</body>
+</html>
